@@ -1,0 +1,37 @@
+services:
+  - type: web
+    name: parallax-forge-server
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: CLIENT_ORIGIN
+        sync: false
+      - key: LYZR_API_KEY
+        sync: false
+      - key: LYZR_AGENT_ID
+        sync: false
+      - key: LYZR_USER_ID
+        sync: false
+      - key: LYZR_API_URL
+        sync: false
+      - key: QDRANT_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
+      - key: QDRANT_COLLECTION
+        sync: false
+      - key: OMI_API_KEY
+        sync: false
+      - key: EMBEDDING_MODEL
+        sync: false
+      - key: EMBEDDING_DIMENSION
+        sync: false
+      - key: MEMORY_TOP_K
+        sync: false
+      - key: MEMORY_MIN_SCORE
+        sync: false
