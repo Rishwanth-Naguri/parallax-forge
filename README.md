@@ -1,5 +1,8 @@
 # PARALLAX FORGE
 
+> 🚀 **Live Demo App:** [https://parallax-forge.vercel.app](https://parallax-forge.vercel.app)  
+> ⚡ **Production API Health:** [https://parallax-forge.onrender.com/api/health](https://parallax-forge.onrender.com/api/health)
+
 **Persistent-memory autonomous operations agent.** PARALLAX FORGE turns a goal into an evidence-grounded, verifiable plan. It recalls similar past problems from a Qdrant vector memory, including what worked, what failed, and what was never tested. It asks your existing **Lyzr** agent for a plan grounded in that evidence, lets you track each step, and saves the *verified* outcome back to memory so the next plan improves.
 
 Optionally, it pulls personal context from your **Omi** wearable (memories + conversations) into the prompt.
